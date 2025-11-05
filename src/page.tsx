@@ -6,9 +6,9 @@ import img1 from "./images/1.jpg";
 import img2 from "./images/2.jpg";
 import img3 from "./images/3.jpg";
 import img4 from "./images/4.jpg";
+import img5 from "./images/5.jpg";
+import img6 from "./images/6.jpg";
 import img7 from "./images/7.jpg";
-import img8 from "./images/8.jpg";
-import img9 from "./images/9.jpg";
 
 import { LeStudioContactSection } from "./lestudiocontact";
 
@@ -52,7 +52,6 @@ const locales: Record<"is" | "en", Locale> = {
       "Náttúrulegt ljós um austurgluggana", // img2
       "Skapandi uppsetning tilbúin fyrir tökur", // img3
       "Víðtækt rými fyrir vinnustofur", // img4
-      "Mínimalískt layout með hljóðvist", // img5
       "Upptöku- og framleiðsluhorn", // img7
       "Hlýtt horn með mjúkum tónum", // img8
       "Áferð, ljós og stemning", // img9
@@ -100,7 +99,6 @@ const locales: Record<"is" | "en", Locale> = {
       "Natural light through the east windows", // img2
       "Creative setup ready for sessions", // img3
       "Wide open space for workshops", // img4
-      "Minimal layout with acoustic design", // img5
       "Recording setup and production area", // img7
       "Cosy corner with warm tones", // img8
       "Textures, light and atmosphere", // img9
@@ -419,7 +417,7 @@ export default function Page() {
   const [lang, setLang] = useState<"is" | "en">("is");
   const [menuOpen, setMenuOpen] = useState(false);
   const t = locales[lang];
-  const images = [img1, img2, img3, img7, img4, img8, img9];
+  const images = [img1, img2, img3, img4, img5, img6, img7];
   const galleryImages = images.slice(1);
   const caps = t.captions;
   return (
@@ -496,7 +494,7 @@ export default function Page() {
       <AboutSection>
         <div className="content">
           <div className="left">
-            <p>{t.aboutText}</p>
+            <div className="left">{t.aboutText}</div>
           </div>
           <div className="right">
             <ul>
