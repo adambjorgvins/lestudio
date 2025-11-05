@@ -133,50 +133,6 @@ const PageWrapper = styled.div`
   overflow-x: hidden;
 `;
 
-const NavBar = styled.nav`
-  position: absolute;
-  top: 32px;
-  right: 5vw;
-  display: flex;
-  gap: 28px;
-  font-family: "Inter", sans-serif;
-  z-index: 10;
-
-  a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-  }
-
-  a:hover {
-    opacity: 1;
-  }
-
-  button {
-    background: transparent;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    opacity: 0.9;
-    transition: opacity 0.2s ease;
-  }
-
-  button:hover {
-    opacity: 1;
-  }
-
-  @media (max-width: 768px) {
-    top: 20px;
-    right: 6vw;
-    gap: 18px;
-    font-size: 0.9rem;
-  }
-`;
-
 const AboutSection = styled.section`
   display: flex;
   justify-content: center;
