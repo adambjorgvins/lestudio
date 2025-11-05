@@ -48,24 +48,24 @@ const locales: Record<"is" | "en", Locale> = {
       "<strong>Tvö baðherbergi</strong>",
     ],
     captions: [
-      "Aðalrými — náttúrulegt ljós", // img1 (Hero)
-      "Náttúrulegt ljós um austurgluggana", // img2
-      "Skapandi uppsetning tilbúin fyrir tökur", // img3
-      "Víðtækt rými fyrir vinnustofur", // img4
-      "Upptöku- og framleiðsluhorn", // img7
-      "Hlýtt horn með mjúkum tónum", // img8
-      "Áferð, ljós og stemning", // img9
+      "Aðalrými — náttúrulegt ljós", // img1
+      "Náttúrulegt ljós um austurgluggana",
+      "Skapandi uppsetning tilbúin fyrir tökur",
+      "Víðtækt rými fyrir vinnustofur",
+      "Upptöku- og framleiðsluhorn",
+      "Hlýtt horn með mjúkum tónum",
+      "Áferð, ljós og stemning",
     ],
     footer: (
       <>
         Le Studio er staðsett á{" "}
         <a
-          href="https://www.google.com/maps/place/Le+Studio/@64.1578101,-21.9434363,617m/data=!3m2!1e3!4b1!4m6!3m5!1s0x48d675d05abbd08b:0xa29b455f80456483!8m2!3d64.1578101!4d-21.940856"
+          href="https://www.google.com/maps?q=Le+Studio,+Hólmaslóð+6,+101+Reykjavík,+Iceland&ll=64.1578101,-21.9434363&z=17"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Vatnagarðar 22, 104 Reykjavík
-        </a>{" "}
+          Hólmaslóð 6, 101 Reykjavík
+        </a>
         — Sjá leiðbeiningar
         <br />© 2025 Le Studio — Reykjavík
       </>
@@ -95,23 +95,23 @@ const locales: Record<"is" | "en", Locale> = {
       "<strong>Two bathrooms</strong>",
     ],
     captions: [
-      "Main space — natural light", // img1 (Hero)
-      "Natural light through the east windows", // img2
-      "Creative setup ready for sessions", // img3
-      "Wide open space for workshops", // img4
-      "Recording setup and production area", // img7
-      "Cosy corner with warm tones", // img8
-      "Textures, light and atmosphere", // img9
+      "Main space — natural light",
+      "Natural light through the east windows",
+      "Creative setup ready for sessions",
+      "Wide open space for workshops",
+      "Recording setup and production area",
+      "Cozy corner with warm tones",
+      "Textures, light and atmosphere",
     ],
     footer: (
       <>
         Le Studio is located at{" "}
         <a
-          href="https://www.google.com/maps/place/Le+Studio/@64.1578101,-21.9434363,617m/data=!3m2!1e3!4b1!4m6!3m5!1s0x48d675d05abbd08b:0xa29b455f80456483!8m2!3d64.1578101!4d-21.940856"
+          href="https://www.google.com/maps?q=Le+Studio,+Hólmaslóð+6,+101+Reykjavík,+Iceland&ll=64.1578101,-21.9434363&z=17"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Vatnagarðar 22, 104 Reykjavík, Iceland
+          Hólmaslóð 6, 101 Reykjavík, Iceland
         </a>{" "}
         — Get directions
         <br />© 2025 Le Studio — Reykjavík
@@ -119,8 +119,6 @@ const locales: Record<"is" | "en", Locale> = {
     ),
   },
 };
-
-// --- styled components ---
 
 const PageWrapper = styled.div`
   display: flex;
@@ -427,7 +425,7 @@ export default function Page() {
           <div className="left">
             <a href="#contact">{t.contact}</a>
             <a
-              href="https://www.google.com/maps/place/Le+Studio/@64.1578101,-21.9434363"
+              href="https://www.google.com/maps?q=Le+Studio,+Hólmaslóð+6,+101+Reykjavík,+Iceland&ll=64.1578101,-21.9434363&z=17"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -490,11 +488,10 @@ export default function Page() {
         </HeroOverlay>
       </Hero>
 
-      {/* Rest of the page unchanged */}
       <AboutSection>
         <div className="content">
           <div className="left">
-            <div className="left">{t.aboutText}</div>
+            <div className="">{t.aboutText}</div>
           </div>
           <div className="right">
             <ul>
